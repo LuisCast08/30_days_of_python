@@ -24,7 +24,10 @@ print(4 >= 8)
 print(4 <= 8)
 
 """
-- Para usar comparativos con strig, lo que compara es el orden alfabetico.
+- Para usar comparativos con strig, lo que compara es el orden alfabetico y detiene la comparación en cuanto encuentre la primera diferencia
+- ej. a < c (verdadero, ahí detiene la comparación y da "True")
+- las mayúsculas tienen menos valor que las minúsculas
+- ej A < a (true)
 - No como tal, el número de caracteres de cada palabra.
 - Las mayúsculas tienen un papel importante.
 """
@@ -40,3 +43,5 @@ print(3 < 4 and "Hola" < "Python")
 print(3 < 4 or "Hola" == "Python")
 # Ahora si yo quisiera invertir la lógica, lo que debo usar es "not" en lo que me ayuda es en 
 print(not(3 < 4)) # Invertí el resultado del operador lógico que iba a dar verdadero. 
+
+print("Hola" > "hola")
